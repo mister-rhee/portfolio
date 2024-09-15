@@ -13,19 +13,32 @@
     --margin-xxl: 2.5rem;
     --margin-xxxl: 4rem;
 
-    font-family: Poppins, Arial, Helvetica, sans-serif;                                                                                            ;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
 }
 
-.navbar {
-    display: flex;
-    padding: var(--margin-xl);
-    gap: var(--margin-xxxl);
-    justify-content: center;
-    align-items: center;
-    position: relative;
+/* mobile */
+body {
+    padding: var(--margin-l);
 }
 
 .button-container {
-    display: flex;
-    gap: var(--margin-l);
+    visibility: hidden;
+}
+
+/* larger screens */
+@media screen and (min-width: 690px) {
+    .navbar {
+        display: flex;
+        padding: var(--margin-l);
+        gap: var(--margin-xxl);
+        justify-content: start;
+        align-items: center;
+        position: relative;
+    }
+
+    .button-container {
+        visibility: visible;
+        display: flex;
+        gap: var(--margin-l);
+    }
 }
