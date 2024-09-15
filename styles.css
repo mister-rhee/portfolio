@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --margin-xxs: .25rem;
+    --margin-xs: .5rem;
+    --margin-s: .75rem;
+    --margin-m: 1rem;
+    --margin-l: 1.25rem;
+    --margin-xl: 1.75rem;
+    --margin-xxl: 2.5rem;
+    --margin-xxxl: 4rem;
+
+    font-family: Poppins, Arial, Helvetica, sans-serif;                                                                                            ;
+}
+
+.navbar {
+    display: flex;
+    padding: var(--margin-xl);
+    gap: var(--margin-xxxl);
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.button-container {
+    display: flex;
+    gap: var(--margin-l);
+}
