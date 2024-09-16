@@ -21,7 +21,7 @@
 
 /* mobile */
 body {
-    padding: var(--margin-l);
+    position: relative;
 }
 
 h1 {
@@ -29,18 +29,26 @@ h1 {
 }
 
 .about {
-    color: var(--text-secondary);
-    margin-top: var(--margin-s);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: var(--margin-m);
+}
+
+.about .blurb {
+    width: 70%;
 }
 
 .socials {
     display: flex;
-    gap: var(--margin-xxs);
-    margin-top: var(--margin-xs);
+    gap: var(--margin-xs);
 }
 
 svg {
-    width: 2rem;
+    width: 2.5rem;
 }
 
 .button-container {
