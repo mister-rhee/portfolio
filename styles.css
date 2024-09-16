@@ -107,6 +107,15 @@ svg {
     width: 1rem;
 }
 
+.project a {
+    color: var(--text-primary);
+    text-decoration: none;
+}
+
+.project a:visited {
+    text-decoration: none;
+}
+
 .education .length,
 .project {
     margin-top: var(--margin-xl);
