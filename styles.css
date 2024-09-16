@@ -17,6 +17,7 @@
     --color-primary: cadetblue;
     --text-primary: black;
     --text-secondary: grey;
+    --text-tertiary: white;
 }
 
 /* mobile */
@@ -87,6 +88,20 @@ svg {
     font-size: 0.75rem;
 }
 
+.relevant-skills {
+    display: flex;
+    margin-top: var(--margin-xs);
+    gap: var(--margin-xs);
+}
+
+.skill {
+    background-color: var(--color-primary);
+    color: var(--text-tertiary);
+    border-radius: 500px;
+    font-size: 0.75rem;
+    padding: var(--margin-xxs) var(--margin-s) var(--margin-xxs) var(--margin-s);
+}
+
 .education .length {
     margin-top: var(--margin-xl);
 }
@@ -94,7 +109,7 @@ svg {
 .footer {
     background-color: var(--color-primary);
     padding: var(--margin-l);
-    color: white;
+    color: var(--text-tertiary);
     font-size: 0.75rem;
     display: flex;
     justify-content: center;
