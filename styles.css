@@ -76,7 +76,7 @@ svg {
 .description {
     list-style: none;
     color: var(--text-secondary);
-    font-size: 0.75rem;
+    font-size: 0.85rem;
 }
 
 .title {
