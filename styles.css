@@ -14,6 +14,9 @@
     --margin-xxxl: 4rem;
 
     font-family: Poppins, Arial, Helvetica, sans-serif;
+    --color-primary: cadetblue;
+    --text-primary: black;
+    --text-secondary: grey;
 }
 
 /* mobile */
@@ -21,23 +24,41 @@ body {
     padding: var(--margin-l);
 }
 
+.about {
+    color: var(--text-secondary);
+    margin-top: var(--margin-s);
+}
+
+.about p {
+    font-size: 0.75rem;
+}
+
+.socials {
+    display: flex;
+    gap: var(--margin-xxs);
+    margin-top: var(--margin-xs);
+}
+
+.social {
+    width: 1.5rem;
+}
+
 .button-container {
-    visibility: hidden;
+    display: none;
 }
 
 /* larger screens */
 @media screen and (min-width: 690px) {
     .navbar {
         display: flex;
-        padding: var(--margin-l);
-        gap: var(--margin-xxl);
+        /* padding: var(--margin-l);
+        gap: var(--margin-xxl); */
         justify-content: start;
         align-items: center;
         position: relative;
     }
 
     .button-container {
-        visibility: visible;
         display: flex;
         gap: var(--margin-l);
     }
