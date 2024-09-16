@@ -30,8 +30,16 @@ h1 {
     font-size: 2.5rem;
 }
 
-.button-container {
+.button-container,
+.navbar {
     display: none;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    padding: var(--margin-xl);
+    gap: 20vh;
 }
 
 .about {
@@ -60,12 +68,13 @@ svg {
 .experiences {
     display: flex;
     flex-direction: column;
-    padding: var(--margin-l);
-    gap: var(--margin-m);
+    gap: var(--margin-xl);
 }
 
-ul {
+.responsibilities {
     list-style: none;
+    color: var(--text-secondary);
+    font-size: 0.75rem;
 }
 
 .title {
@@ -76,6 +85,10 @@ ul {
 .length {
     color: var(--text-secondary);
     font-size: 0.75rem;
+}
+
+.education .length {
+    margin-top: var(--margin-xl);
 }
 
 .footer {
