@@ -161,12 +161,15 @@ svg {
 
 /* larger screens */
 @media screen and (min-width: 690px) {
-    .content {}
-
     .experiences,
     .projects,
     .education {
-        width: 50%;
+        width: max(40%, 500px);
         align-self: center;
+    }
+
+    .responsibilities,
+    .description {
+        max-inline-size: 66ch;
     }
 }
