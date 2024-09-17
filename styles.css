@@ -161,10 +161,12 @@ svg {
 
 /* larger screens */
 @media screen and (min-width: 690px) {
+
     .experiences,
     .projects,
     .education {
         width: max(40%, 500px);
+        margin-left: 7.5%;
         align-self: center;
     }
 
