@@ -18,6 +18,8 @@
     --text-primary: black;
     --text-secondary: grey;
     --text-tertiary: white;
+
+    --svg-grey: #808080;
 }
 
 /* mobile */
@@ -46,21 +48,17 @@ body {
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
-}
-
-.button-container,
-.navbar {
-    display: none;
 }
 
 .content {
     display: flex;
     flex-direction: column;
     padding: var(--margin-xl);
-    gap: 50vh;
+    gap: 20vh;
 }
 
 .about {
@@ -92,6 +90,7 @@ body {
 
 svg {
     width: 2.5rem;
+    fill: var(--svg-grey);
 }
 
 .experiences {
@@ -162,17 +161,12 @@ svg {
 
 /* larger screens */
 @media screen and (min-width: 690px) {
-    .navbar {
-        display: flex;
-        /* padding: var(--margin-l);
-        gap: var(--margin-xxl); */
-        justify-content: space-between;
-        align-items: center;
-        position: relative;
-    }
+    .content {}
 
-    .button-container {
-        display: flex;
-        gap: var(--margin-l);
+    .experiences,
+    .projects,
+    .education {
+        width: 50%;
+        align-self: center;
     }
 }
