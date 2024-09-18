@@ -161,6 +161,22 @@ svg {
 
 /* larger screens */
 @media screen and (min-width: 690px) {
+    .content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(auto-fit, auto);
+    }
+
+    .projects {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+
+    .education {
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+    }
+
     .experiences,
     .projects,
     .education {
