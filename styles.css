@@ -13,9 +13,9 @@
 }
 
 :root {
-    --background: #212121;
+    --background: white;
     --color-primary: cadetblue;
-    --text-primary: white;
+    --text-primary: black;
     --text-secondary: grey;
     --text-tertiary: white;
     --svg-background: #808080;
@@ -96,6 +96,15 @@ body {
     animation: fadeInAnimation 1.5s;
     animation-fill-mode: forwards;
     animation-delay: 4.5s;
+}
+
+.down-arrow {
+    opacity: 0;
+    animation: fadeInAnimation 1.5s;
+    animation-fill-mode: forwards;
+    animation-delay: 6.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
 }
 
 .about .blurb {
@@ -180,6 +189,10 @@ svg {
 
 /* larger screens */
 @media screen and (min-width: 690px) {
+    .down-arrow {
+        display: none;
+    }
+    
     .content {
         display: grid;
         grid-template-columns: 1fr 1fr;
