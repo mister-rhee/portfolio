@@ -1,9 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-}
-
-:root {
+    font-family: Poppins, Arial, Helvetica, sans-serif;
     --margin-xxs: .25rem;
     --margin-xs: .5rem;
     --margin-s: .75rem;
@@ -12,14 +10,33 @@
     --margin-xl: 1.75rem;
     --margin-xxl: 2.5rem;
     --margin-xxxl: 4rem;
+}
 
-    font-family: Poppins, Arial, Helvetica, sans-serif;
+:root {
+    --background: #212121;
+    --color-primary: cadetblue;
+    --text-primary: white;
+    --text-secondary: grey;
+    --text-tertiary: white;
+    --svg-background: #808080;
+}
+
+:root.light {
+    --background: white;
     --color-primary: cadetblue;
     --text-primary: black;
     --text-secondary: grey;
     --text-tertiary: white;
+    --svg-background: #808080;
+}
 
-    --svg-grey: #808080;
+:root.dark {
+    --background: #212121;
+    --color-primary: cadetblue;
+    --text-primary: white;
+    --text-secondary: grey;
+    --text-tertiary: white;
+    --svg-background: #808080;
 }
 
 /* mobile */
@@ -27,6 +44,8 @@ body {
     position: relative;
     display: flex;
     flex-direction: column;
+    background-color: var(--background);
+    color: var(--text-primary);
 }
 
 .about h1 {
@@ -90,7 +109,7 @@ body {
 
 svg {
     width: 2.5rem;
-    fill: var(--svg-grey);
+    fill: var(--svg-background);
 }
 
 .experiences {
@@ -165,6 +184,11 @@ svg {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(auto-fit, auto);
+    }
+
+    .about {
+        position: sticky;
+        top: 10px;
     }
 
     .projects {
