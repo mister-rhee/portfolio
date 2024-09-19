@@ -194,14 +194,19 @@ svg {
     }
 
     .content {
+        padding: 0;
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 4fr 5fr;
         grid-template-rows: repeat(auto-fit, auto);
+    }
+
+    .experiences {
+        margin-top: var(--margin-xxl)
     }
 
     .about {
         position: sticky;
-        top: 10px;
+        top: 0px;
     }
 
     .projects {
@@ -212,12 +217,13 @@ svg {
     .education {
         grid-column: 2 / 3;
         grid-row: 3 / 4;
+        margin-bottom: var(--margin-xxl);
     }
 
     .experiences,
     .projects,
     .education {
-        width: max(40%, 500px);
+        width: max(80%, 500px);
         margin-left: 7.5%;
         align-self: center;
     }
