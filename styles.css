@@ -11,3 +11,28 @@
     --margin-xxl: 2.5rem;
     --margin-xxxl: 4rem;
 }
+
+:root {
+    --bg-dark: oklch(0.1 0 0);
+    --bg: oklch(0.2 0 0);
+    --bg-light: oklch(0.3 0 0);
+    --text: oklch(0.95 0 0);
+    --text-muted: oklch(0.90 0 0);
+}
+
+/* @media (prefers-color-scheme: light) {} */
+
+.light {
+    --bg-dark: oklch(0.9 0 0);
+    --bg: oklch(0.95 0 0);
+    --bg-light: oklch(1 0 0);
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+}
+
+@media screen and (max-width: 620px) {
+    /* For mobile displays */
+}
