@@ -35,8 +35,43 @@
 body {
     background-color: var(--bg);
     color: var(--text);
+    display: flex;
+    flex-direction: column;
 }
 
-@media screen and (max-width: 620px) {
-    /* For mobile displays */
+.topnav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: var(--margin-xxl);
+    margin: var(--margin-xl);
 }
+
+a {
+    text-decoration: none;
+    color: var(--text);
+}
+
+a:hover {
+    background-color: var(--bg-light);
+}
+
+.topnav a.active {
+    background-color: var(--cadet-blue);
+}
+
+#toggle-darkmode {
+    border: none;
+    background-color: var(--bg);
+    color: var(--text);
+    margin-top: var(--margin-xxs);
+}
+
+#toggle-darkmode svg {
+    width: 2rem;
+    fill: var(--text);
+}
+
+/* @media screen and (max-width: 620px) {
+} */

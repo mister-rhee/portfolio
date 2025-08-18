@@ -189,10 +189,6 @@ svg {
 
 /* larger screens */
 @media screen and (min-width: 690px) {
-    .down-arrow {
-        display: none;
-    }
-
     .content {
         padding: 0;
         display: grid;
