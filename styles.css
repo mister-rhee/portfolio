@@ -54,12 +54,18 @@ a {
     transition: color 0.5s;
 }
 
+.normal-text {
+    font-size: 1.25rem;
+}
+
+.subtext {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
 .fullscreen {
     width: 100vw;
     height: 100vh;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
     padding: var(--margin-m);
 }
 
@@ -68,6 +74,7 @@ a {
     top: 20px;
     left: 15px;
     font-weight: bold;
+    color: var(--accent2);
 }
 
 #nav-button-container {
@@ -87,6 +94,12 @@ a {
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
+}
+
+.blurb {
+    display: flex;
+    flex-flow: column wrap;
+    gap: var(--margin-l);
 }
 
 .text-content {
