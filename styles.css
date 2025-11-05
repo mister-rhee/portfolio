@@ -36,9 +36,12 @@
     --bg-light: oklch(1 0 0);
     --text: oklch(0.9 0 0);
     --text-muted: oklch(0.5 0 0);
+    --accent1-dark: oklch(0.6500 0.0525 200);
     --accent1: oklch(0.7250 0.0525 200);
-    --accent1-light: oklch(0.850 0.0525 200);
+    --accent1-light: oklch(0.8500 0.0525 200);
+    --accent2-dark: oklch(0.6500 0.1850 50);
     --accent2: oklch(0.7250 0.1850 50);
+    --accent2-light: oklch(0.8500 0.1850 50);
 }
 
 body {
@@ -73,14 +76,15 @@ a {
 #branding {
     position: absolute;
     top: 20px;
-    left: 16px;
+    left: 12px;
     font-weight: bold;
-    color: var(--accent2);
+    font-size: 1.25rem;
+    color: var(--accent2-dark);
 }
 
 #nav-button-container {
     position: absolute;
-    top: 11px;
+    top: 16px;
     right: 14px;
     background-color: var(--bg);
     width: 44px;

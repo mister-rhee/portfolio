@@ -1,0 +1,16 @@
+#branding {
+    color: var(--accent1-dark);
+}
+
+.education {
+    background-color: var(--accent2-light);
+}
+
+.experience {
+    background-color: var(--accent-1);
+}
+
+.line1, .line2, .line3 {
+    background-color: var(--accent2);
+}
+
