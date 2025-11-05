@@ -37,6 +37,7 @@
     --text: oklch(0.9 0 0);
     --text-muted: oklch(0.5 0 0);
     --accent1: oklch(0.7250 0.0525 200);
+    --accent1-light: oklch(0.850 0.0525 200);
     --accent2: oklch(0.7250 0.1850 50);
 }
 
@@ -72,20 +73,31 @@ a {
 #branding {
     position: absolute;
     top: 20px;
-    left: 15px;
+    left: 16px;
     font-weight: bold;
     color: var(--accent2);
 }
 
 #nav-button-container {
     position: absolute;
-    top: 18px;
-    right: 20px;
+    top: 11px;
+    right: 16px;
+    background-color: var(--bg);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
-#nav-button {
-    position: sticky;
-    top: 18px;
+.lines {
+    width: 20px;
+    height: 3px;
+    background-color: var(--accent1);
+    margin: 3px 0;
 }
 
 .content {
