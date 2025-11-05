@@ -81,7 +81,7 @@ a {
 #nav-button-container {
     position: absolute;
     top: 11px;
-    right: 16px;
+    right: 14px;
     background-color: var(--bg);
     width: 44px;
     height: 44px;
@@ -93,7 +93,11 @@ a {
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
-.lines {
+#nav-button-container:hover {
+    box-shadow: none;
+}
+
+.line1, .line2, .line3 {
     width: 20px;
     height: 3px;
     background-color: var(--accent1);
@@ -130,3 +134,11 @@ a {
 @media screen and (min-width: 769) {
 
 } */
+
+.has-hover {
+    transition: 0.3s;
+}
+
+.has-hover:hover {
+    transform: scale(1.1);
+}
