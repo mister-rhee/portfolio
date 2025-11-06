@@ -4,6 +4,7 @@
 
 .education {
     background-color: var(--accent2-light);
+    padding-top: var(--margin-xxxl);
 }
 
 .experience {
