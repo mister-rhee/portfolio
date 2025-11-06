@@ -34,7 +34,7 @@
     --bg-dark: oklch(0.9 0 0);
     --bg: oklch(0.95 0 0);
     --bg-light: oklch(1 0 0);
-    --text: oklch(0.9 0 0);
+    --text: oklch(1 0 0);
     --text-muted: oklch(0.5 0 0);
     --text-dark: oklch(0 0 0);
     --accent1-dark: oklch(0.6500 0.0525 200);
