@@ -135,6 +135,17 @@ a {
     height: 3px;
     background-color: var(--accent1);
     margin: 3px 0;
+    transition: 0.5s;
+}
+
+.change .line1 {
+  transform: translate(0, 6px) rotate(-45deg);
+}
+
+.change .line2 { opacity: 0; }
+
+.change .line3 {
+  transform: translate(0, -6px) rotate(45deg);
 }
 
 .content {
