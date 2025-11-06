@@ -36,6 +36,7 @@
     --bg-light: oklch(1 0 0);
     --text: oklch(0.9 0 0);
     --text-muted: oklch(0.5 0 0);
+    --text-dark: oklch(0 0 0);
     --accent1-dark: oklch(0.6500 0.0525 200);
     --accent1: oklch(0.7250 0.0525 200);
     --accent1-light: oklch(0.8500 0.0525 200);
@@ -55,6 +56,33 @@ a {
     color: var(--text-muted);
     border-radius: var(--margin-xs);
     transition: color 0.5s;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    height: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    gap: var(--margin-m);
+}
+
+.overlay a {
+    color: var(--text-dark);
+    font-size: 2rem;
 }
 
 .normal-text {
@@ -93,6 +121,7 @@ a {
     flex-flow: column;
     justify-content: center;
     align-items: center;
+    z-index: 1;
 }
 
 #nav-button-container:hover {
