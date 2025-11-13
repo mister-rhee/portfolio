@@ -3,15 +3,19 @@
 }
 
 .education {
-    background-color: var(--accent2-light);
-    padding-top: var(--margin-xxxl);
+    background-color: var(--accent2);
 }
 
+/* .education > .block {
+    background-color: var(--accent2-light);
+    padding: var(--margin-s);
+    border-radius: var(--margin-s);
+} */
+
 .experience {
-    background-color: var(--accent-1);
+    background-color: var(--accent1);
 }
 
 .line1, .line2, .line3 {
     background-color: var(--accent2);
 }
-
