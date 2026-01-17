@@ -116,7 +116,7 @@ ul {
 
 #branding {
     position: absolute;
-    top: var(--margin-m);
+    top: var(--margin-l);
     left: var(--margin-m);
     font-weight: bold;
     font-size: 1.25rem;
@@ -125,7 +125,7 @@ ul {
 
 #nav-button-container {
     position: fixed;
-    top: var(--margin-xs);
+    top: var(--margin-s);
     right: var(--margin-s);
     background-color: var(--bg);
     width: 44px;
