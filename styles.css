@@ -112,6 +112,7 @@ ul {
     width: 100vw;
     min-height: 100dvh;
     padding: var(--margin-m);
+    box-sizing: border-box;
 }
 
 #branding {
@@ -216,7 +217,8 @@ ul {
 }
 
 .button-hollow {
-    padding: var(--margin-xs);
+    max-width: 50%;
+    /* padding: var(--margin-xs); */
     border: 3px solid var(--text);
 }
 
@@ -235,3 +237,4 @@ ul {
 .shadow-4 {
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
+
