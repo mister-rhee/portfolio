@@ -108,6 +108,10 @@ ul {
     color: var(--text-muted);
 }
 
+span#age {
+    white-space: nowrap;
+}
+
 .fullscreen {
     width: 100vw;
     min-height: 100dvh;
@@ -163,7 +167,7 @@ ul {
   transform: translate(0, -6px) rotate(45deg);
 }
 
-.content-centered {
+.content {
     background-color: var(--accent1);
     display: flex;
     flex-flow: row wrap;

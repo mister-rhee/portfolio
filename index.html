@@ -14,6 +14,7 @@
     <title>Richard Rhee</title>
     <link rel="stylesheet" href="styles.css">
     <script src="navigation.js"></script>
+    <script src="age.js"></script>
 </head>
 <!-- <link rel="icon" type="image/x-icon" href="/icons/favicon.png"> -->
 
@@ -27,7 +28,7 @@
         </div>
     </div>
 
-    <div class="fullscreen content-centered">
+    <div class="fullscreen content">
         <div id="nav-button-container" class="has-hover shadow-2" onclick="toggleNav(this)">
             <span id="nav-button">
                 <div class="line1"></div>
@@ -39,11 +40,13 @@
         <a href="index.html" id="branding">mister.rhee</a>
         <div class="blurb text-content">
             <h1>Hi there!</h1>
-            <p class="normal-text">I'm Richard Rhee, a
-                25-year-old graduate student at Purdue University studying
-                microelectronics and semiconductors.</p>
+            <div class="normal-text">I'm Richard Rhee, a 
+                <span id="age"></span>-year-old graduate student at Purdue University 
+                studying microelectronics and semiconductors.
+            </div>
         </div>
     </div>
+    <script>document.addEventListener("DOMContentLoaded", calculateAge("2000-08-16"));</script>
 </body>
 
 </html>
