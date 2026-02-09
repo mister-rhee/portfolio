@@ -1,0 +1,24 @@
+.content {
+    background-color: var(--bg);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#branding {
+    color: var(--text-dark);
+}
+
+.line1, .line2, .line3 {
+    background-color: var(--text-dark);
+}
+
+.fa-brands, .email {
+    color: var(--text-dark);
+    font-size: var(--margin-xl);
+}
+
+/* .fa-github:hover {
+
+} */
