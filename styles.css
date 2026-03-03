@@ -20,6 +20,7 @@
     --accent2: oklch(0.6500 0.1850 50);
     --text-main: black;
     --text-sub: rgb(70, 70, 70);
+    --background: white;
 
     --github-gray: #24292e;
     --linkedin-blue: #0a66c2;
@@ -82,4 +83,8 @@ body {
     font-weight: bold;
     font-size: var(--xxl);
     color: var(--accent1);
+}
+
+.button-container {
+    justify-content: center;
 }
