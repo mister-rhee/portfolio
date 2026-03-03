@@ -13,32 +13,71 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
-    <div class="flex-column page-wrapper">
+<body class="flex-row">
+    <div class="flex-column page-wrapper gap-xxl">
         <div class="header">
-            <div id="branding">mister.rhee</div>
-            <div class="navigation">
+            <a href="index.html" id="branding">mister.rhee</a>
+            <div class="flex-row navigation gap-m">
                 <a href="index.html">home</a>
                 <a href="experience.html">experience</a>
                 <a href="projects.html">projects</a>
             </div>
         </div>
 
-        <div class="flex-column content">
-            <div class="block">
-                <div class="block-item">
-                    <h2>Education</h2>
-                    <p>Present</p>
+        <div class="flex-column content gap-xxl">
+            <div class="flex-column block gap-m">
+                <h2>Education</h2>
+                <div class="block-item flex-column gap-xxs">
                     <p>Master of Science in Engineering in Microelectronics and Semiconductors</p>
                     <p>Purdue University</p>
+                    <p class="subtext">Present</p>
                 </div>
 
-                <p>2018 - 2022</p>
-                <p>Bachelor of Science in Computer Engineering</p>
-                <p>Purdue University</p>
+                <div class="block-item">
+                    <p>Bachelor of Science in Computer Engineering</p>
+                    <p>Purdue University</p>
+                    <p class="subtext">2018 - 2022</p>
+                </div>
             </div>
-            <div class="block">
+
+            <div class="flex-column block gap-m">
                 <h2>Experience</h2>
+                <div class="block-item flex-column gap-xxs">
+                    <p>Network Automation Engineer - Nsight</p>
+                    <p class="subtext">Developed onboarding and offboarding workflows for network monitoring
+                        devices to reduce manual work. Initiated new database for unified and
+                        standardized data between teams.
+                    </p>
+                    <p class="subtext">May 2023 - Oct 2023</p>
+                </div>
+
+                <div class="block-item flex-column gap-xxs">
+                    <div>Geek Squad Consultation Agent - Best Buy</div>
+                    <p class="subtext">Assessed software and hardware problems to present repair plans.
+                        Worked one-on-one with clients to provide personalized experience
+                        and aided to understand technological concepts, achieved highest
+                        survey response rate for individual performance in regional market.
+                    </p>
+                    <p class="subtext">Nov 2022 - May 2023</p>
+                </div>
+
+                <div class="block-item flex-column gap-xxs">
+                    <div>Undergraduate Researcher - Purdue University</div>
+                    <p class="subtext">Created a continous development workflow to unify testing
+                        environment for consistent results and faster development.
+                    </p>
+                    <p class="subtext">Dec 2020 - May 2021</p>
+                </div>
+
+                <div class="block-item flex-column gap-xxs">
+                    <div>Advanced C Programming Teaching Assistant - Purdue University</div>
+                    <p class="subtext">Held office hours to answer students' conceptual and technical questions and
+                        helped debug programs.
+                        Participated in weekly meetings to optimize course instruction resulting in better content
+                        delivery.
+                    </p>
+                    <p class="subtext">Aug 2020 - Dec 2020</p>
+                </div>
             </div>
         </div>
     </div>
