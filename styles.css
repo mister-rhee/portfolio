@@ -42,6 +42,30 @@
 a {
     text-decoration: none;
     color: var(--text-main);
+    position: relative;
+}
+
+a.link:hover {
+    color: var(--text-main);
+}
+
+.link:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    display: block;
+    margin-top: 0px;
+    right: 0;
+    background: var(--text-main);
+    transition: width .2s ease;
+    -webkit-transition: width .2s ease;
+}
+
+.link:hover:after {
+    width: 100%;
+    left: 0;
+    background: var(--text-main);
 }
 
 body {
