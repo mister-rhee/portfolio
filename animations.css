@@ -25,6 +25,14 @@
     transform: scale(1.25);
 }
 
+.hover-bob {
+    transition: transform 0.2s ease;
+}
+
+.hover-bob:hover {
+    transform: translateY(-4px);
+}
+
 .fa-github:hover {
     color: var(--github-gray);
 }
