@@ -14,16 +14,28 @@
     --xxl: 2.5rem;
     --xxxl: 4rem;
 
+    --linkedin-blue: #009fcf;
+    --github-green: #0FBF3E;
+}
+
+[data-theme="light"] {
+    --background: white;
+    --text-main: black;
+    --text-sub: rgb(70, 70, 70);
     --accent1: rgb(90, 140, 160);
     --accent1: oklch(0.6500 0.0525 200);
     --accent2: rgb(231, 123, 0);
     --accent2: oklch(0.6500 0.1850 50);
-    --text-main: black;
-    --text-sub: rgb(70, 70, 70);
-    --background: white;
+}
 
-    --github-gray: #24292e;
-    --linkedin-blue: #0a66c2;
+[data-theme="dark"] {
+    --background: rgb(34, 34, 34);
+    --text-main: rgb(232, 232, 232);
+    --text-sub: rgb(188, 188, 188);
+    --accent1: rgb(90, 140, 160);
+    --accent1: oklch(0.6500 0.0525 200);
+    --accent2: rgb(231, 123, 0);
+    --accent2: oklch(0.6500 0.1850 50);
 }
 
 .gap-xxs {
@@ -53,11 +65,18 @@ a.link:hover {
     color: var(--text-main);
 }
 
+button {
+    all: unset;
+    cursor: pointer;
+}
+
 body {
     font-family: Inter, Arial, Helvetica, sans-serif;
     font-size: 1.125rem;
     min-height: 100dvh;
     width: 100%;
+    background: var(--background);
+    color: var(--text-main);
     justify-content: center;
     align-items: start;
 }
@@ -87,4 +106,8 @@ body {
 
 .button-container {
     justify-content: center;
+}
+
+.header {
+    justify-content: space-between;
 }

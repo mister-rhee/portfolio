@@ -7,6 +7,7 @@
     margin-top: 0px;
     right: 0;
     background: var(--text-main);
+    color: var(--text-main);
     transition: width .2s ease;
     -webkit-transition: width .2s ease;
 }
@@ -15,6 +16,7 @@
     width: 100%;
     left: 0;
     background: var(--text-main);
+    color: var(--text-main);
 }
 
 .hover-zoom {
@@ -34,7 +36,7 @@
 }
 
 .fa-github:hover {
-    color: var(--github-gray);
+    color: var(--github-green);
 }
 
 .fa-linkedin:hover {
